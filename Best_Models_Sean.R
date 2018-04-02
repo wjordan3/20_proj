@@ -1,3 +1,5 @@
+library(splines)
+
 # INCOME
 
 fit = lm(Income ~ Borough + poly(TotalPop, 1)+poly(White, 4)+poly(Black,2)+poly(Asian,2)+poly(Citizen,4)+poly(Professional,4)+poly(Service,5)+poly(Construction,5)+poly(Production,5)+poly(Drive,6)+Transit+poly(Walk,3)+poly(OtherTransp,8)+poly(WorkAtHome,4)+poly(MeanCommute,3)+poly(Employed, 3)+poly(PrivateWork, 3)+SelfEmployed+poly(PercentMale,1), data=census)
